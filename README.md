@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+
+=======
 # PageObjectModel-TestNG-Project
 
 Welcome to the **PageObjectModel-TestNG-Project**!
@@ -176,3 +179,4 @@ This project is licensed under all rights reserved to the owner. No part of this
 
 ## Additional Info
 This framework is designed to ensure that your Selenium WebDriver tests remain clean, maintainable, and easy to scale. By using the Page Object Model and Page Factory design patterns, the test scripts are more modular, and any changes to the UI can be handled with minimal impact on the tests themselves.
+>>>>>>> refs/heads/develop

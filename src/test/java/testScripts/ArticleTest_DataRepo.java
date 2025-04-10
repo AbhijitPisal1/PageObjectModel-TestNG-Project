@@ -6,6 +6,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
@@ -93,6 +94,10 @@ public class ArticleTest_DataRepo {
 	@Test(priority = 4)
 	public void delArticle() {
 		infoPage.deleteArticle();
+		Alert alert = driver.switchTo().alert();
+		System.out.println(alert.getText());
+		Assert.assertEquals(alert.getText(), "Want to delete the article?"); 
+		alert.accept();
 	}
 
 	
