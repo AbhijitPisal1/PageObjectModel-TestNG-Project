@@ -27,7 +27,7 @@ The **Page Object Model (POM)** and **Page Factory** are design patterns used in
 This project uses both **POM** and **Page Factory** to create a well-structured, reusable, and maintainable test automation framework.
 
 ---
-
+```plaintext
 ## Project Structure
 
 src/
@@ -85,19 +85,29 @@ ConfigLoader.java: This class is located in the commonUtils folder. It loads con
 The pages folder contains the following classes, each representing a page in the application:
 
 ArticleEditPage.java: Represents the article edit page for the Conduit app (Project 2).
+
 ArticleHomePage.java: Represents the article home page for the Conduit app (Project 2).
+
 ArticleInfoPage.java: Represents the article info page for the Conduit app (Project 2).
+
 ArticleLoginPage.java: Represents the login page for the Conduit app (Project 2).
+
 ShopCartPage.java: Represents the shopping cart page for the Saucedemo Shop app (Project 1).
+
 ShopCheckOutPage.java: Represents the checkout page for the Saucedemo Shop app (Project 1).
+
 ShopLoginPage.java: Represents the login page for the Saucedemo Shop app (Project 1).
+
 ShopProductListPage.java: Represents the product list page for the Saucedemo Shop app (Project 1).
 
 ---
 
 ## Test Scripts
+
 ArticleTest.java: Contains test cases for automating user interactions with the Conduit article creation and publishing app.
+
 ArticleTest_DataRepo.java: A data repository test for managing data in the Conduit app.
+
 ShopAppTest.java: Contains test cases for automating user interactions on the Saucedemo Shop app.
 
 ---
@@ -110,14 +120,17 @@ Steps to Clone and Run the Project
 
 1. Clone the Repository
 To clone the repository, use the following command:
+
 git clone <repository-url>
 
 2. Navigate to the Project Directory
 After cloning the repository, navigate to the project directory:
+
 cd <project-directory>
 
 3. Add TestNG Dependency (if needed)
 Ensure that TestNG is included as a dependency in the pom.xml file. If it is not already present, add the following dependency:
+
 <dependency>
     <groupId>org.testng</groupId>
     <artifactId>testng</artifactId>
@@ -127,15 +140,22 @@ Ensure that TestNG is included as a dependency in the pom.xml file. If it is not
 
 4. Configure config.properties
 Make sure the config.properties file is correctly set up. This file is located in the src/test/configFiles folder and contains test-specific variables like URLs and credentials.
+
 Example config.properties:
-# Saucedemo Shop App Configuration
-baseURL=https://www.saucedemo.com
-username=standard_user
-password=secret_sauce
-# Conduit Article App Configuration
-articleBaseURL=https://conduit.example.com
-articleUsername=testuser
-articlePassword=securepassword
+1. Saucedemo Shop App Configuration
+
+    baseURL=https://www.saucedemo.com
+
+    username=standard_user
+
+    password=secret_sauce
+2.  Conduit Article App Configuration
+
+    articleBaseURL=https://conduit.example.com
+
+    articleUsername=testuser
+
+    articlePassword=securepassword
 
 5. Run the Tests
 To run the tests, execute the following Maven command:
