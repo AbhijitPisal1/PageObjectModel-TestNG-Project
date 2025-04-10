@@ -55,20 +55,20 @@ src/
     │   └── config.properties                # Configuration file for test variables
     ├── resources/
     └── pom.xml                              # Maven dependencies and configuration
-
-
+```
 ---
 
 ## Dependencies
 
 The project uses Maven for managing dependencies. The required libraries for Selenium WebDriver, TestNG, and other essential dependencies are specified in the pom.xml file.
+```
 <dependency>
     <groupId>org.testng</groupId>
     <artifactId>testng</artifactId>
     <version>7.4.0</version>
     <scope>test</scope>
 </dependency>
-
+```
 ---
 
 ## Key Features
@@ -120,46 +120,45 @@ Steps to Clone and Run the Project
 
 1. Clone the Repository
 To clone the repository, use the following command:
-
+```
 git clone <repository-url>
-
+```
 2. Navigate to the Project Directory
 After cloning the repository, navigate to the project directory:
-
+```
 cd <project-directory>
-
+```
 3. Add TestNG Dependency (if needed)
 Ensure that TestNG is included as a dependency in the pom.xml file. If it is not already present, add the following dependency:
-
+```
 <dependency>
     <groupId>org.testng</groupId>
     <artifactId>testng</artifactId>
     <version>7.4.0</version>
     <scope>test</scope>
 </dependency>
-
+```
 4. Configure config.properties
 Make sure the config.properties file is correctly set up. This file is located in the src/test/configFiles folder and contains test-specific variables like URLs and credentials.
 
 Example config.properties:
 1. Saucedemo Shop App Configuration
-
+```
     baseURL=https://www.saucedemo.com
-
     username=standard_user
-
     password=secret_sauce
+```
 2.  Conduit Article App Configuration
-
+```
     articleBaseURL=https://conduit.example.com
-
     articleUsername=testuser
-
     articlePassword=securepassword
-
+```
 5. Run the Tests
 To run the tests, execute the following Maven command:
+```
 mvn test
+```
 This will run all the test scripts located in the tests folder. After execution, TestNG will generate a report in the test-output directory.
 
 6. View Test Reports
