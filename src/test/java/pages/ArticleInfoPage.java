@@ -41,5 +41,8 @@ public class ArticleInfoPage {
 	public void descinfo() {
 		System.out.println("description is: " + descField.getText());
 	}
-
+	
 }
+
+
+

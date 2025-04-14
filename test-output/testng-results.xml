@@ -2,36 +2,36 @@
 <testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-10T10:20:48 IST" name="Default suite" finished-at="2025-04-10T10:20:53 IST" duration-ms="5166">
+  <suite started-at="2025-04-14T12:52:08 IST" name="Default suite" finished-at="2025-04-14T12:52:14 IST" duration-ms="6195">
     <groups>
     </groups>
-    <test started-at="2025-04-10T10:20:48 IST" name="Default test" finished-at="2025-04-10T10:20:53 IST" duration-ms="5166">
-      <class name="testScripts.ConduitArticles">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testScripts.ConduitArticles@4b21844c]" started-at="2025-04-10T10:20:48 IST" name="setup" finished-at="2025-04-10T10:20:49 IST" duration-ms="1057" status="PASS">
+    <test started-at="2025-04-14T12:52:08 IST" name="Default test" finished-at="2025-04-14T12:52:14 IST" duration-ms="6195">
+      <class name="testScripts.ArticleTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testScripts.ArticleTest@3ec11999]" started-at="2025-04-14T12:52:08 IST" name="setup" finished-at="2025-04-14T12:52:09 IST" duration-ms="866" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="validLoginTest()[pri:0, instance:testScripts.ConduitArticles@4b21844c]" started-at="2025-04-10T10:20:49 IST" name="validLoginTest" finished-at="2025-04-10T10:20:50 IST" duration-ms="325" status="PASS">
+        <test-method signature="validLoginTest()[pri:1, instance:testScripts.ArticleTest@3ec11999]" started-at="2025-04-14T12:52:09 IST" name="validLoginTest" finished-at="2025-04-14T12:52:09 IST" duration-ms="415" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validLoginTest -->
-        <test-method signature="CreateNewArticle()[pri:1, instance:testScripts.ConduitArticles@4b21844c]" started-at="2025-04-10T10:20:50 IST" name="CreateNewArticle" finished-at="2025-04-10T10:20:52 IST" duration-ms="1820" status="PASS">
+        <test-method signature="CreateNewArticle()[pri:2, instance:testScripts.ArticleTest@3ec11999]" started-at="2025-04-14T12:52:09 IST" name="CreateNewArticle" finished-at="2025-04-14T12:52:11 IST" duration-ms="1878" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreateNewArticle -->
-        <test-method signature="UpdateArticle()[pri:2, instance:testScripts.ConduitArticles@4b21844c]" started-at="2025-04-10T10:20:52 IST" name="UpdateArticle" finished-at="2025-04-10T10:20:53 IST" duration-ms="1540" status="PASS">
+        <test-method signature="UpdateArticle()[pri:3, instance:testScripts.ArticleTest@3ec11999]" started-at="2025-04-14T12:52:11 IST" name="UpdateArticle" finished-at="2025-04-14T12:52:13 IST" duration-ms="2040" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UpdateArticle -->
-        <test-method signature="delArticle()[pri:3, instance:testScripts.ConduitArticles@4b21844c]" started-at="2025-04-10T10:20:53 IST" name="delArticle" finished-at="2025-04-10T10:20:53 IST" duration-ms="114" status="PASS">
+        <test-method signature="delArticle()[pri:4, instance:testScripts.ArticleTest@3ec11999]" started-at="2025-04-14T12:52:13 IST" name="delArticle" finished-at="2025-04-14T12:52:14 IST" duration-ms="708" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- delArticle -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testScripts.ConduitArticles@4b21844c]" started-at="2025-04-10T10:20:53 IST" name="teardown" finished-at="2025-04-10T10:20:53 IST" duration-ms="192" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testScripts.ArticleTest@3ec11999]" started-at="2025-04-14T12:52:14 IST" name="teardown" finished-at="2025-04-14T12:52:14 IST" duration-ms="190" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- testScripts.ConduitArticles -->
+      </class> <!-- testScripts.ArticleTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

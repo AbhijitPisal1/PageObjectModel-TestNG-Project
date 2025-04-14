@@ -6,7 +6,6 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
 
-import org.openqa.selenium.Alert;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
@@ -16,6 +15,7 @@ import org.testng.annotations.Test;
 
 import base.TestBase;
 import commonUtils.ConfigLoader;
+import commonUtils.Utility;
 import pages.ArticleEditPage;
 import pages.ArticleInfoPage;
 import pages.ArticleLoginPage;
@@ -94,10 +94,7 @@ public class ArticleTest_DataRepo {
 	@Test(priority = 4)
 	public void delArticle() {
 		infoPage.deleteArticle();
-		Alert alert = driver.switchTo().alert();
-		System.out.println(alert.getText());
-		Assert.assertEquals(alert.getText(), "Want to delete the article?"); 
-		alert.accept();
+		Utility.HandleAlert(driver, "Want to delete the article?");
 	}
 
 	
