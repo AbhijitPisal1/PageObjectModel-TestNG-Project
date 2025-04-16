@@ -49,6 +49,7 @@ public class ArticleEditPage {
 		
 	}
 	
+	
 	public void SubmitInfo() {
 		submitBtn.click();
 	}

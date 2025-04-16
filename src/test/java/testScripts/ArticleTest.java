@@ -37,6 +37,7 @@ public class ArticleTest {
 	@Test(priority = 1)
 	public void validLoginTest() {
 		loginPage.loginIntoApp("AutoTester@test.com", "Test@test111");
+		
 	}
 
 	@Test(priority = 2)
