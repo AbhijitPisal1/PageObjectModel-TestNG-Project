@@ -15,6 +15,7 @@ import org.testng.annotations.Test;
 
 import base.TestBase;
 import commonUtils.ConfigLoader;
+import commonUtils.Utility;
 import pages.ArticleEditPage;
 import pages.ArticleInfoPage;
 import pages.ArticleLoginPage;
@@ -93,6 +94,7 @@ public class ArticleTest_DataRepo {
 	@Test(priority = 4)
 	public void delArticle() {
 		infoPage.deleteArticle();
+		Utility.HandleAlert(driver, "Want to delete the article?");
 	}
 
 	

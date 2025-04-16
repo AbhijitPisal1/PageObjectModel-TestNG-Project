@@ -27,6 +27,8 @@ public class ArticleEditPage {
 	
 	@FindBy(xpath = "//button[@type='submit']")
 	WebElement submitBtn;
+	
+	
 
 	public ArticleEditPage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
@@ -47,7 +49,9 @@ public class ArticleEditPage {
 		
 	}
 	
+	
 	public void SubmitInfo() {
 		submitBtn.click();
 	}
+	
 }
